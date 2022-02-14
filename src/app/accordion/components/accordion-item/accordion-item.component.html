@@ -1,0 +1,19 @@
+<div class="accordion__item" [ngClass]="{'accordion__item--active': open}">
+
+
+  <ng-content select="[title]"></ng-content>
+  <ng-content select="[titleText]"></ng-content>
+
+
+  <button
+    class="accordion__button"
+    type="button"
+    (click)="toggle()"
+    attr.data-test-id="{{id}}"
+  >
+    <app-accordion-svg [open]="open"></app-accordion-svg>
+  </button>
+</div>
+<ng-container *ngIf="open">
+  <ng-content select="[body]"></ng-content>
+</ng-container>

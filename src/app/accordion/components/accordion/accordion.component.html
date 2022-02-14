@@ -1,0 +1,14 @@
+<div class="accordion">
+  <ng-container *ngFor="let accordionItem of accordionItems; let i = index">
+    <app-accordion-item [id]="i" (clicked)="onClick($event)">
+      <span title><div class="accordion__title">{{'Q' + accordionItem.id}}</div></span>
+      <span titleText><div class="accordion__text">{{accordionItem.question}}</div></span>
+      <div class="accordion__body" body>
+        {{accordionItem.answer}}
+      </div>
+    </app-accordion-item>
+  </ng-container>
+</div>
+
+
+

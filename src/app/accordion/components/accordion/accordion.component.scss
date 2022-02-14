@@ -1,0 +1,26 @@
+
+.accordion {
+  &__title {
+      display: flex;
+      padding: 0 20px;
+      align-items: center;
+      font-size: 30px;
+      font-family: oswald-bold;
+  }
+
+  &__text {
+      display: flex;
+      padding: 10px 20px;
+      align-items: center;
+      width: 100%;
+      font-family: oswald-regular;
+
+  }
+
+  &__body {
+      margin: 0 26px;
+      padding: 26px 20px;
+      border-bottom: 2px solid #000;
+      font-family: oswald-light;
+  }
+}
