@@ -1,20 +1,21 @@
 
+@import "../../../../styles.scss";
 .accordion {
   &__item {
       display: flex;
       padding: 18px 0;
       margin: 0 20px;
-      background-color: #fff;
-      border-bottom: 2px solid #000;
+      background-color: $accordion-item-bg-colour;
+      border-bottom: 2px solid $border-bottom-colour;
       align-items: center;
       &--active {
-          background-color: #ccc;
+          background-color: $accordion-item-active-bg-colour;
       }
   }
 
   &__button {
       margin: 0 20px;
-      background-color: rgb(255, 238, 0);
+      background-color: $accordion-button-bg-colour;
       min-width: 70px;
       height: 46px;
       border: none;

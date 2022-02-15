@@ -1,4 +1,6 @@
 
+@import "./../../../../styles.scss";
+
 .accordion {
   &__title {
       display: flex;
@@ -19,7 +21,7 @@
   &__body {
       margin: 0 26px;
       padding: 26px 20px;
-      border-bottom: 2px solid #000;
+      border-bottom: 2px solid $border-bottom-colour;
       font-family: oswald-light;
   }
 }
